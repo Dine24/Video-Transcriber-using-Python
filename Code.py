@@ -4,7 +4,7 @@ import subprocess
 from moviepy.editor import VideoFileClip
 
 # STEP 1: Paths (Edit this for your video)
-video_path = r"C:\Users\tamil\OneDrive\Desktop\150220\_VI_0052.MOV"
+video_path = "path"
 output_srt = "subtitles.srt"
 filename, ext = os.path.splitext(os.path.basename(video_path))
 output_video = "video_with_subs.mp4"
@@ -56,3 +56,4 @@ clip.write_videofile(output_path, codec="libx264", audio_codec="aac")
 
 
 print("\n✅ Done: Transcription + Subtitles added and video played.")
+
